@@ -15,6 +15,9 @@
 .DS_Store
 .prettierignore
 
-/node_modules
 /design
+/node_modules
 /src
+*.json
+*.ts
+tailwind-config.js

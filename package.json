@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently npm:watch:*",
-    "watch:css": "postcss ./src/main.css -o dist/main.css --watch",
+    "watch:css": "postcss ./src/input.css -o dist/output.css --watch",
     "watch:ts": "tsc -w"
   },
   "keywords": [],

@@ -6,7 +6,8 @@ module.exports = {
       fontFamily:{
         "Overpass": "Overpass"
       }
+      
     },
   },
-  plugins: [],
+  plugins: [ ],
 }
