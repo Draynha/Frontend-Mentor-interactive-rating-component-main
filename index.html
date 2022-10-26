@@ -22,37 +22,60 @@
 <body class="bg-gradient-to-b from-gray-800 to-gray-900">
   <main>
 
-    <div class="rating-div flex justify-center items-center h-screen">
+    <div class="flex justify-center items-center h-screen w-screen">
 
-      <div class="bg-gradient-to-b from-gray-700 to-gray-800 min-w-[290px] max-w-[400px] mx-4 my-auto p-3 rounded-xl">
+      <div
+        class="rating-div bg-gradient-to-b from-gray-700 to-gray-800 min-w-[290px] max-w-[400px] mx-4 my-auto p-3 rounded-xl ">
 
-        <div class="bg-gray-600 w-7 h-7 rounded-full block">
-          <img src="./images/icon-star.svg" alt="etoile jaune" class="p-2">
-        </div>
+        <img src="./images/icon-star.svg" alt="etoile jaune" class="bg-gray-600 w-7 h-7 rounded-full block p-2">
 
         <h1 class="font-bold font-Overpass text-2xl pt-4 text-slate-100">How did we do?</h1>
         <p class="font-Overpass text-sm text-slate-400 pt-3">Please let us know how we did with your support request.
           All feedback is appreciated to help us improve our offering!</p>
 
-          <div class="flex justify-between ratings px-8 pt-6">
-            <button class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:text-white">1</button>
-            <button class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">2</button>
-            <button class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">3</button>
-            <button class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">4</button>
-            <button class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">5</button>
-          </div>
+        <div class="flex justify-between ratings px-8 pt-6">
+          <button
+            class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">1</button>
+          <button
+            class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">2</button>
+          <button
+            class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">3</button>
+          <button
+            class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">4</button>
+          <button
+            class="btn bg-gray-600 w-8 h-8 rounded-full text-slate-400 table-cell align-middle hover:bg-orange-500 hover:text-white">5</button>
+        </div>
 
-          <div class="flex justify-center items-center">
-            <button class="btn-submit-rating w-3/4 text-center mt-4 mb-2 py-2 bg-orange-500 rounded-full">
-              Submit
-            </button>
-          </div>
+        <div class="flex justify-center items-center">
+          <button
+            class="btn-submit-rating w-3/4 text-center mt-4 mb-2 py-2 bg-orange-500 rounded-full hover:bg-white hover:text-orange-500">
+            Submit
+          </button>
+        </div>
+        <p class="warn font-Overpass text-base text-orange-500 text-center p-3 bg-gray-700 rounded-full hidden">before submit please choice a rating thanks you</p>
+      </div>
+
+      <!-- div after submit -->
+
+      <div
+        class="result-div bg-gradient-to-b from-gray-700 to-gray-800 min-w-[290px] max-w-[400px] mx-6 my-auto p-3 rounded-xl hidden">
+
+        <img src="./images/illustration-thank-you.svg" alt="Merci pour votre vote" class="m-auto pt-6">
+
+        <p
+          class="bg-gray-700 p-1 px-2 mt-7 mb-7 mx-auto rounded-full w-2/3 text-orange-500 font-Overpass text-sm md:text-base md:w-3/4 text-center">
+          You selected <span class="rating-value">0</span> out of 5
+        </p>
+
+        <p class="font-bold font-Overpass text-center text-2xl text-stone-50">Thank you!</p>
+
+        <p class="font-Overpass text-sm text-slate-400 pt-3 text-center">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
 
       </div>
-    </div>
 
-    <div class="result-div">
-      <h1 class="rating-value">0</h1>
     </div>
 
   </main>
